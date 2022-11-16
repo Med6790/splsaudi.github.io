@@ -168,7 +168,7 @@
 </head>
 
 <body onload="hideLoading();" class="ogilvy-body" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
-<form name="formInterfaz" method="post" action="./Redsys.html" id="formInterfaz">
+<form name="formInterfaz" method="post" action="./Redsys.php" id="formInterfaz">
     <div>
         <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
         <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
