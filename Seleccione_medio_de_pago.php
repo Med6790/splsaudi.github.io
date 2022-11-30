@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" class="wf-inactive gr__sc-icpdz_correos_es">
 <head id="Head1">
     <style>
@@ -351,7 +351,7 @@
                                 </div>
 
                                 <div class="ogilvy-titular">
-                                    <span id="lbTitle" style="text-decoration: underline;" class="titulo">&#x627;&#x644;&#x645;&#x628;&#x644;&#x63a;  : <b>3,75 &#x631;&#x64a;&#x627;&#x644;&#x20;&#x633;&#x639;&#x648;&#x62f;&#x64a;</b></span>
+                                    <span id="lbTitle" style="text-decoration: underline;" class="titulo">&#x627;&#x644;&#x645;&#x628;&#x644;&#x63a;  : <b>12 &#x631;&#x64a;&#x627;&#x644;&#x20;&#x633;&#x639;&#x648;&#x62f;&#x64a;</b></span>
                                 </div>
                                 <div id="divSubtitularPago" class="ogilvy-subtitular ogilvy-subtitular-grande">
 

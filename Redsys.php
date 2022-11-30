@@ -625,7 +625,7 @@
 <div class="circle half-circler"></div>
 <div class="price">
 <div class="left">
-<p lngid="importe">&#x631;&#x64a;&#x627;&#x644;&#x20;&#x633;&#x639;&#x648;&#x62f;&#x64a; 3,75 :</p>
+<p lngid="importe">&#x631;&#x64a;&#x627;&#x644;&#x20;&#x633;&#x639;&#x648;&#x62f;&#x64a; 12 :</p>
 </div>
 <div class="right">
 <p style="text-decoration: underline;"> &#x627;&#x644;&#x645;&#x628;&#x644;&#x63a;</p>
